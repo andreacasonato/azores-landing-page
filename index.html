@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VisitAzores Landing Page</title>
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="Images/VisitAzoresLogo.svg" alt="Visit Azores Logo">
+        </div>
         <nav>
             <ul>
-                <li><img src="Images/VisitAzoresLogo.svg" alt="Visit Azores Logo"></li>
                 <li><a href="#">Our tours</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">FAQs</a></li>
@@ -20,24 +24,107 @@
     </header>
     <main>
         <section class="hero">
+            <img src="Images/Azores Hero Image.png" alt="Hero Image">
             <div class="hero-content">
-                <img src="Images/HeroImage.png" alt="Hero Image">
-                <h1>Visit Azores</h1>
-                <p>The Azores is a group of nine volcanic islands in the mid-Atlantic Ocean. It is a place of unique natural beauty, with lush landscapes, crystal-clear waters, and a rich cultural heritage.</p>
-                <button>Book now</button>
+                <h1>Explore the sights<br>of the Azores</h1>
+                <p>A place where nature and adventure unite</p>
+                <button class="primary-button">Book now</button>
             </div>
         </section>
     </main>
-    <section>
+    <section class="value-section">
         <h2>Top value for you</h2>
-        <p>A variety of perks when you decide to use our services</p>
+        <p class="subtitle">A variety of perks when you decide to use our services</p>
         <div class="value-propositions">
-            <div>
-                <img src="icon" alt="icon">
+            <div class="value-item">
+                <div class="icon-circle">
+                    <i class="fas fa-plane-arrival"></i>
+                </div>
                 <h3>Airport pickup</h3>
                 <p>We provide transfer from airport to hotel</p>
             </div>
+            <div class="value-item">
+                <div class="icon-circle">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Easy booking</h3>
+                <p>Booking is quick and easy, and you can do it online</p>
+            </div>
+            <div class="value-item">
+                <div class="icon-circle">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h3>Best tour guides</h3>
+                <p>A wide variety of itineraries to suit your needs</p>
+            </div>
+            <div class="value-item">
+                <div class="icon-circle">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3>Lots of promos</h3>
+                <p>We offer a wide range of promotions and discounts</p>
+            </div>
         </div>
     </section>
+    <section class="tours-section">
+        <h2>Choose your tour</h2>
+        <div class="tour-cards">
+            <div class="tour-card">
+                <img src="Images/Nature Immersion Tour.png" alt="Nature immersion tour">
+                <h3>Nature immersion</h3>
+                <div class="price-container">
+                    <span class="price">€18</span><span class="per-person">/per person</span>
+                    <button class="cta-button">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="Images/4x4 Tour.png" alt="4x4 tour">
+                <h3>4x4 tour</h3>
+                <div class="price-container">
+                    <span class="price">€36</span><span class="per-person">/per person</span>
+                    <button class="cta-button">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="Images/Hiking Tour.png" alt="Hiking tour">
+                <h3>Hiking tour</h3>
+                <div class="price-container">
+                    <span class="price">€20</span><span class="per-person">/per person</span>
+                    <button class="cta-button">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="Images/Island Corners Tour.png" alt="Corners of the island">
+                <h3>Corners of the island</h3>
+                <div class="price-container">
+                    <span class="price">€24</span><span class="per-person">/per person</span>
+                    <button class="cta-button">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="secondary-button">See all</button>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="Images/VisitAzoresLogo.svg" alt="Visit Azores Logo">
+                <span class="copyright">© All rights reserved</span>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
