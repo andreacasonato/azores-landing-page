@@ -1,4 +1,4 @@
-/* Base styles and reset */
+/* BASE STYLES AND RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -309,7 +309,7 @@ footer {
     font-size: 0.8rem;
 }
 
-/* Responsive Design */
+/* MEDIA QUERIES */
 @media (max-width: 1220px) {
     header {
         padding: 24px;
