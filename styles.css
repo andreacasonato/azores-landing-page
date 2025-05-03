@@ -130,11 +130,12 @@ nav a {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
 }
 
 .primary-button:hover {
-    background: #f0f0f0;
+    background: #00813E;
+    color: #FFFFFF;
 }
 
 /* VALUE SECTION */
@@ -182,10 +183,11 @@ nav a {
 }
 
 .tour-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 48px;
+    justify-content: space-between;
 }
 
 .tour-card {
@@ -193,6 +195,15 @@ nav a {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    flex-basis: calc(25% - 18px);
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.3s ease;
+    display: block;
+}
+
+.tour-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 .tour-card img {
@@ -244,9 +255,10 @@ nav a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
 }
 
+/* No need to change the hover since it's already green */
 .cta-button:hover {
     background: #006632;
 }
@@ -254,7 +266,7 @@ nav a {
 .secondary-button {
     background: #FFFFFF;
     color: #303030;
-    border: 1px solid #EFEFEF;
+    border: 1px solid #00813E;
     border-radius: 24px;
     padding: 12px 32px;
     font-size: 1rem;
@@ -262,11 +274,12 @@ nav a {
     cursor: pointer;
     display: block;
     margin: 0 auto;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
 }
 
 .secondary-button:hover {
-    background: #f8f8f8;
+    background: #00813E;
+    color: #FFFFFF;
 }
 
 /* FOOTER */
@@ -336,7 +349,11 @@ footer {
     }
     
     .tour-cards {
-        grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
+    }
+    
+    .tour-card {
+        flex-basis: calc(50% - 12px);
     }
     
     footer {
@@ -360,7 +377,11 @@ footer {
     }
     
     .tour-cards {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    
+    .tour-card {
+        flex-basis: 100%;
     }
     
     .footer-content {
