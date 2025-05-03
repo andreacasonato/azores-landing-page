@@ -14,7 +14,7 @@ body {
     max-width: 1220px;
 }
 
-/* Typography */
+/* TYPOGRAPHY */
 h1 {
     font-size: 3.815rem;
     font-weight: bold;
@@ -50,7 +50,7 @@ p {
     margin-bottom: 48px;
 }
 
-/* Header and Navigation */
+/* HEADER AND NAVIGATION */
 header {
     display: flex;
     justify-content: space-between;
@@ -83,10 +83,10 @@ nav a {
     font-weight: 400;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
     position: relative;
-    width: 100%;
+    width: calc(100% - 160px);
     height: 480px;
     overflow: hidden;
     border-radius: 16px;
@@ -97,6 +97,7 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
 }
 
@@ -106,7 +107,7 @@ nav a {
     bottom: 48px;
     color: #FFFFFF;
     z-index: 2;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .hero-content h1 {
@@ -136,7 +137,7 @@ nav a {
     background: #f0f0f0;
 }
 
-/* Value Section */
+/* VALUE SECTION */
 .value-section {
     padding: 80px 80px 40px;
 }
@@ -175,7 +176,7 @@ nav a {
     font-size: 1rem;
 }
 
-/* Tours Section */
+/* TOURS SECTION */
 .tours-section {
     padding: 40px 80px 80px;
 }
@@ -211,6 +212,13 @@ nav a {
     align-items: center;
     justify-content: space-between;
     padding: 0 16px 16px;
+}
+
+/* GROUP THE PRICE AND PER-PERSON TEXT TOGETHER */
+.price-group {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
 }
 
 .price {
@@ -261,7 +269,7 @@ nav a {
     background: #f8f8f8;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     border-top: 1px solid #EFEFEF;
     padding: 40px 80px;
@@ -308,8 +316,19 @@ footer {
     }
     
     .hero {
+        width: calc(100% - 48px);
         margin: 0 24px;
         height: 400px;
+    }
+    
+    .hero-content {
+        left: 24px;
+        bottom: 24px;
+        max-width: 85%;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
     }
     
     .value-section, .tours-section {
@@ -331,6 +350,10 @@ footer {
         gap: 16px;
     }
     
+    .hero {
+        height: 360px;
+    }
+    
     .value-propositions {
         flex-direction: column;
         gap: 40px;
@@ -346,10 +369,33 @@ footer {
     }
     
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 320px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+    }
+    
+    .primary-button {
+        padding: 10px 24px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
     }
 }
