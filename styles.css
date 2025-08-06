@@ -1,12 +1,18 @@
 /* BASE STYLES AND RESET */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.5;
 }
 
 body {
-    font-family: 'Inter', Arial, sans-serif;
     background: #FCFCFC;
     color: #303030;
     margin: 0 auto;
@@ -194,7 +200,7 @@ nav a {
     background: #FFFFFF;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     flex-basis: calc(25% - 18px);
     text-decoration: none;
     color: inherit;
@@ -203,7 +209,7 @@ nav a {
 }
 
 .tour-card:hover {
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .tour-card img {
@@ -327,35 +333,36 @@ footer {
     header {
         padding: 24px;
     }
-    
+
     .hero {
         width: calc(100% - 48px);
         margin: 0 24px;
         height: 400px;
     }
-    
+
     .hero-content {
         left: 24px;
         bottom: 24px;
         max-width: 85%;
     }
-    
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
-    .value-section, .tours-section {
+
+    .value-section,
+    .tours-section {
         padding: 60px 24px;
     }
-    
+
     .tour-cards {
         flex-wrap: wrap;
     }
-    
+
     .tour-card {
         flex-basis: calc(50% - 12px);
     }
-    
+
     footer {
         padding: 40px 24px;
     }
@@ -366,33 +373,33 @@ footer {
         flex-direction: column;
         gap: 16px;
     }
-    
+
     .hero {
         height: 360px;
     }
-    
+
     .value-propositions {
         flex-direction: column;
         gap: 40px;
     }
-    
+
     .tour-cards {
         flex-direction: column;
     }
-    
+
     .tour-card {
         flex-basis: 100%;
     }
-    
+
     .footer-content {
         flex-direction: column;
         gap: 24px;
     }
-    
+
     h1 {
         font-size: 2rem;
     }
-    
+
     h2 {
         font-size: 1.8rem;
     }
@@ -402,20 +409,20 @@ footer {
     .hero {
         height: 320px;
     }
-    
+
     .hero-content h1 {
         font-size: 1.8rem;
     }
-    
+
     .hero-content p {
         font-size: 0.9rem;
         margin-bottom: 16px;
     }
-    
+
     .primary-button {
         padding: 10px 24px;
     }
-    
+
     h2 {
         font-size: 1.5rem;
     }
